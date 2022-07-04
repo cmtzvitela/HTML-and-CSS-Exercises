@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: darkgreen;
+  height: 400px;
+  padding: 10px;
+}
+
+div {
+  background-color: purple;
+  width: 50%;
+  padding: 30px;
+  border: 5px solid black;
+}
