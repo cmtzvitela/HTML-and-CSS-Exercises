@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  border: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 500px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: bisque;
+}
+
+div {
+  background-color: aquamarine;
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 6s ease-in 0s infinite normal none running moving;
+}
+
+@keyframes moving {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
