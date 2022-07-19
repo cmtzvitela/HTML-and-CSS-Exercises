@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <label for="left">To the left</label>
+      <input type="radio" class="btn-left" name="selector" id="left"></input>
+      <label for="top">To the top</label>
+      <input type="radio" class="btn-top" name="selector" id="top"></input>
+      <label for="right">To the right</label>
+      <input type="radio" class="btn-right" name="selector" id="right"></input>
+      <ul id="menu-list" class="menu-list">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop ↓</button>
+              <div class="dropdown-content">
+                <a href="#">Shirts</a>
+                <a href="#">Pants</a>
+                <a href="#">Shoes</a>
+                <a href="#">Hats</a>
+              </div>
+          </div>
+        </li>
+        <li>Community</li>
+        <li>Blog</li>
+      </ul>  
+    </nav>
+    <!-- <section class="btn">
+      <button class="btn-left">To the left!</button>
+      <button class="btn-top">To the top!</button>
+      <button class="btn-right">To the right!</button>
+    </section> -->
+  </body>
+</html>
