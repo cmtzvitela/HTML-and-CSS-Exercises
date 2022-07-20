@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  height: 50px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  height: calc(100vh - 200px - 50px);
+}
+article {
+  width: 40%;
+  border: solid 1px black;
+  margin: 0;
+  padding: 0;
+  background-color: dimgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  width: 20%;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 200px;
+  background-color: rgb(33, 62, 115);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
