@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  display: block;
+  width: 500px;
+  height: 300px;
+  padding: 0;
+  margin: auto;
+}
+li {
+  list-style: none;
+}
+
+.first-slide {
+  z-index: 50;
+  position: fixed;
+}
+
+/* .first-slide:hover {
+  z-index: 30;
+  transition: z-index 2s ease-out 2s;
+} */
+
+.second-slide {
+  z-index: 45;
+  position: fixed;
+}
+
+.third-slide {
+  z-index: 40;
+  position: fixed;
+}
+
+.btn-2:checked ~ ul .first-slide {
+  display: none;
+}
+
+.btn-3:checked ~ ul .first-slide,
+.btn-3:checked ~ ul .second-slide {
+  display: none;
+}
