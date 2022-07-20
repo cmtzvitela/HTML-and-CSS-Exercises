@@ -1,6 +1,9 @@
 span {
+  display: inline-block;
   font-size: 3rem;
   font-weight: 200;
+  padding: 10px;
+  transition: all 0.1s ease-out;
 }
 
 div {
@@ -9,8 +12,7 @@ div {
   align-items: center;
   height: 500px;
 }
+
 span:hover {
-  font-size: 8rem;
-  font-weight: bold;
-  transition: all 0.5s ease;
+  transform: scale(2);
 }
