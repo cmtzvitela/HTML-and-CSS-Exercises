@@ -31,3 +31,30 @@ section {
   font-size: 3rem;
   text-align: center;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .album {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .box {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 1) {
+  .album {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 1%;
+  }
+}
+
+@media only screen and (min-device-width: 721px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .album {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 1%;
+  }
+}
