@@ -32,7 +32,7 @@ section {
   text-align: center;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 480px) {
   .album {
     display: flex;
     flex-flow: column wrap;
@@ -43,7 +43,7 @@ section {
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 481px) and (max-width: 720px) and (-webkit-min-device-pixel-ratio: 1) {
   .album {
     display: grid;
     grid-template-columns: 45% 45%;
@@ -51,7 +51,7 @@ section {
   }
 }
 
-@media only screen and (min-device-width: 721px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 721px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .album {
     display: grid;
     grid-template-columns: 32% 32% 32%;
